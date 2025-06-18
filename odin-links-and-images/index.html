@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links and Images</title>
+</head>
+
+<body>
+    <h1>Homepage</h1>
+    <ul>
+        <li><a href="https://www.theodinproject.com/about">About The Odin Project_Self (Absolute Link) </a></li>
+        <li><a href="./pages/about.html">About Page (Relative Link)</a>
+            <img src="../images/dog.jpg" alt="Pug Logo" height="30" width="30">
+            >
+        </li>
+
+        <li><a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">About The Odin
+                Project_Blank_Noopener_NoReferrer</a></li>
+    </ul>
+    <p>The <strong>noopener</strong>: The <strong>noopener</strong> value of the rel attribute ensures that a link
+        opened in a new tab or window cannot
+        interact with
+        or access the original page. Without it, the new page can use JavaScript to manipulate the original page, which
+        poses a
+        security risk.</p>
+
+
+    <p>Without noopener, the new tab could use JavaScript to interact with the original page, which is unsafe.
+        <strong>noreferrer</strong>: The <strong>noreferrer</strong> value of the rel attribute provides both privacy
+        and security. It prevents the new page from knowing where the user came from (hiding the referrer) and also
+        includes the behavior of noopener, preventing the new page from accessing the original page.
+    </p>
+
+    <p>The prevention of access that is caused by <strong>noopener</strong> prevents phishing attacks where the opened
+        link may change the
+        original webpage to a different one to trick users. This is referred to as tabnabbing. Adding the
+        <strong>noreferrer</strong> value can be done if you wish to not let the opened link know that your webpage
+        links to it. <strong>NOTE:</strong> Nevertheless, in line with good coding practices and to err on the side of
+        caution, it is recommended to always pair a
+        <strong>target="_blank"</strong> with a <strong>rel="noopener noreferrer".</strong>
+    </p>
+
+
+
+
+
+</body>
+
+</html>
